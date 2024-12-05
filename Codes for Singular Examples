@@ -1,0 +1,32 @@
+#(Singular Code for Example 3.2)#
+LIB "tropical.lib";
+ring r=(0,t),(x,y),dp;
+poly h1=t50*x5y7+x5y3+(10 + 3t18)*x4y3+(25 + 6t18)*x3y3+(3 + 2t2)*x7;
+drawTropicalCurve(h1,"max","onlytexfile");
+poly h2=substitute(h1,x,x-5+3t9);
+drawTropicalCurve(h2,"max","onlytexfile");
+-----------
+#(Singular Code for Example 3.5)#
+LIB "tropical.lib";
+ring r=(0,t),(x,y),dp;
+poly h1=t110*x6y10+t55*x6y7+11t55*x5y7+x6y4+x7y2+(5t32 + 22)*x5y4+(2t2 + 3)*x8+11x6y2+(6t32 + 121)*x4y4;
+drawTropicalCurve(h1,"max","onlytexfile");
+poly h2=substitute(h1,x,x-11+7t16);
+drawTropicalCurve(h2,"max","onlytexfile");
+-----------
+#(Singular Code for Example 4.5)#
+LIB "tropical.lib";
+ring r=(0,t),(x,y),dp;
+poly p1=t4+(−3t3 − 2t2)*xy+((29t3+112t2)/32)*x2y+t2*xy2+x2y2+(−3t−2)*x3y2+x4y2+((16+9t)/32)*x2y3+x3y3−(3/16)x2y4;
+drawTropicalCurve(p1,"max","onlytexfile");
+poly p2=substitute(p1,y,y+4);
+drawTropicalCurve(p2,"max","onlytexfile");
+---------------
+#(Singular Code for Example 4.7)#
+LIB "tropical.lib";
+ring r=(0,t),(x,y),dp;
+poly p1=(−14t12+9t10+4t8)/(1+t2)+((42t10+t8−30t6−8t4)/(1+t2))*xy+((−28t10−88t8+32t6+16t4)/(2+2t2)*x2y+((−14t8+9t6+4t4)/(1+t2))*xy2+(9t4+17t2+4)*x2y2+((42t6+t4−30t2−8)/(1+t2)*x3y2+((−14t4+9t2+4)/(1+t2))*x4y2+(−13t2−4)*x2y3+((−14t4+9t2+4)/(1+t2))*x3y3+x2y4;
+drawTropicalCurve(p1,"max","onlytexfile");
+poly p2=substitute(p1,y,y+2+3t+3t2);
+drawTropicalCurve(p2,"max","onlytexfile");
+----------------
